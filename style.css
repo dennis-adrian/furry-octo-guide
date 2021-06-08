@@ -1,0 +1,50 @@
+:root {
+  --main-bg-color: hsl(233, 47%, 7%);
+  --card-bg: hsl(244, 38%, 16%);
+  --accent: rgb(170, 92, 219);
+  --white-heading: hsl(0, 0%, 100%);
+  --white-paragraph: hsla(0, 0%, 100%, 0.75);
+  --white-stat-heading: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--main-bg-color);
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  color: var(--white-heading);
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  height: 80vh;
+  margin: 10vh 3vh 0;
+}
+
+.card__img {
+  background-image: linear-gradient(rgba(100, 53, 130, 0.7), rgba(100, 53, 130, 0.7)), url(./images/image-header-mobile.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 240px;
+}
+
+.attribution {
+  bottom: 2vh;
+  color: var(--white-heading);
+  font-size: 11px;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
